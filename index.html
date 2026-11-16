@@ -129,7 +129,7 @@ B.forEach((b,i)=>{
   const el=document.createElement('section');
   el.className='block'; el.dataset.id=b.id; el.style.gridArea=b.id; el.style.setProperty('--c',b.color);
   el.innerHTML=`<div class="inner">
-    <div class="face front"><span class="n">${i+1}</span>${svg(b.icon)}<h3>${b.title}</h3><p>${b.q}</p><span class="tap">click to reveal</span></div>
+    <div class="face front">${svg(b.icon)}<h3>${b.title}</h3><p>${b.q}</p><span class="tap">click to reveal</span></div>
     <div class="face back"><div class="head">${svg(b.icon)}${b.title}</div>
       <ul>${b.items.map(t=>`<li>${t}</li>`).join('')}</ul></div>
   </div>`;
