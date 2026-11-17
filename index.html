@@ -61,9 +61,9 @@
 
   footer{text-align:center;font-size:12px;color:var(--muted);padding:0 0 30px}
   @media (max-width:900px){
-    .canvas{grid-template-columns:1fr 1fr;grid-template-areas:"cs cs" "vp vp" "ch cr" "rv rv" "kr ka" "kp kp" "co co"}
+    .canvas{grid-template-columns:1fr 1fr;grid-template-areas:"kp kp" "ka kr" "vp vp" "cr ch" "cs cs" "co co" "rv rv"}
   }
-  @media (max-width:560px){.canvas{grid-template-columns:1fr;grid-template-areas:"cs" "vp" "ch" "cr" "rv" "kr" "ka" "kp" "co"}}
+  @media (max-width:560px){.canvas{grid-template-columns:1fr;grid-template-areas:"kp" "ka" "kr" "vp" "cr" "ch" "cs" "co" "rv"}}
 </style>
 </head>
 <body>
@@ -100,24 +100,24 @@ const I = {
 };
 
 const B = [
-  {id:'cs',title:'Customer Segments',q:'Who are we creating value for?',color:'var(--blue)',icon:'segments',
-   items:['Content creators and YouTubers, 18–40 years old','Travellers','Filmmakers and photographers','Companies of agriculture, construction']},
-  {id:'vp',title:'Value Propositions',q:'What value do we deliver?',color:'var(--green)',icon:'value',
-   items:['Professional quality videos in small and easy products','Solves the problem of shaky videos','Products for beginners and professionals']},
-  {id:'ch',title:'Channels',q:'How do we reach our customers?',color:'var(--red)',icon:'channels',
-   items:['Communicate: YouTube, Instagram and TikTok','Sell: DJI online store and electronics stores','Deliver: home delivery']},
-  {id:'cr',title:'Customer Relationship',q:'How do we keep our customers?',color:'var(--purple)',icon:'relation',
-   items:['Self-service: apps and online tutorials','Personal: customer support','DJI Care Refresh – protection for accidents']},
-  {id:'rv',title:'Revenue Stream',q:'How does the business make money?',color:'var(--deep)',icon:'revenue',
-   items:['Sale of drones, for example DJI Mini, DJI Air, DJI Mavic','Sale of cameras, for example Osmo Pocket, Osmo Action','Sale of gimbals and microphones, for example Osmo Mobile, DJI Mic','Sale of accessories, batteries, filters','DJI Care Refresh, paid protection plan']},
-  {id:'kr',title:'Key Resources',q:'What do we need to deliver the value?',color:'var(--blue)',icon:'resources',
-   items:['Engineers, human resources','Factories and equipment','Patents and technology','Software','The DJI brand']},
-  {id:'ka',title:'Key Activities',q:'What do we have to do well?',color:'var(--yellow)',icon:'activities',
-   items:['Product development, new drones and cameras','Production','Promotion and sales on social media','After-sales support']},
   {id:'kp',title:'Key Partners',q:'Who helps us?',color:'var(--orange)',icon:'partners',
    items:['Stores like Fnac, Worten and Amazon','Content creators and influencers','Factories and component suppliers']},
+  {id:'ka',title:'Key Activities',q:'What do we have to do well?',color:'var(--yellow)',icon:'activities',
+   items:['Product development, new drones and cameras','Production','Promotion and sales on social media','After-sales support']},
+  {id:'kr',title:'Key Resources',q:'What do we need to deliver the value?',color:'var(--blue)',icon:'resources',
+   items:['Engineers, human resources','Factories and equipment','Patents and technology','Software','The DJI brand']},
+  {id:'vp',title:'Value Propositions',q:'What value do we deliver?',color:'var(--green)',icon:'value',
+   items:['Professional quality videos in small and easy products','Solves the problem of shaky videos','Products for beginners and professionals']},
+  {id:'cr',title:'Customer Relationship',q:'How do we keep our customers?',color:'var(--purple)',icon:'relation',
+   items:['Self-service: apps and online tutorials','Personal: customer support','DJI Care Refresh – protection for accidents']},
+  {id:'ch',title:'Channels',q:'How do we reach our customers?',color:'var(--red)',icon:'channels',
+   items:['Communicate: YouTube, Instagram and TikTok','Sell: DJI online store and electronics stores','Deliver: home delivery']},
+  {id:'cs',title:'Customer Segments',q:'Who are we creating value for?',color:'var(--blue)',icon:'segments',
+   items:['Content creators and YouTubers, 18–40 years old','Travellers','Filmmakers and photographers','Companies of agriculture, construction']},
   {id:'co',title:'Cost Structure',q:'Where does the money go?',color:'var(--teal)',icon:'cost',
-   items:['Research and development','Production and materials','Marketing and influencers','Stores and shipping']}
+   items:['Research and development','Production and materials','Marketing and influencers','Stores and shipping']},
+  {id:'rv',title:'Revenue Stream',q:'How does the business make money?',color:'var(--deep)',icon:'revenue',
+   items:['Sale of drones, for example DJI Mini, DJI Air, DJI Mavic','Sale of cameras, for example Osmo Pocket, Osmo Action','Sale of gimbals and microphones, for example Osmo Mobile, DJI Mic','Sale of accessories, batteries, filters','DJI Care Refresh, paid protection plan']}
 ];
 
 
